@@ -1,4 +1,4 @@
-let country = 'Malaysia';
+/* let country = 'Malaysia';
 let continent = 'Asia';
 let population = 33.08;
 
@@ -11,3 +11,4 @@ console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+*/
