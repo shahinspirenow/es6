@@ -63,7 +63,7 @@ console.log(job);
 // Global Scope
 lastName = 'shah';
 console.log(lastName);
-*/
+
 
 // Basic Operators
 
@@ -89,6 +89,42 @@ console.log(x);
 
 //Comparison Operator 
 console.log(ageShah > ageSyafiq); // > is greater than
-console.log(ageSyafiq >= 18); // > is greater than and 18
+console.log(ageSyafiq >= 18); // > is greater than or equal
 console.log(ageShah < ageSyafiq); // > is less than
-console.log(ageSyafiq <= 18); // > is less than and equal = 18
+console.log(ageSyafiq <= 18); // > is less than or equal = 18
+
+const isFullAge = ageShah >= 18;
+
+console.log(now - 1991 > now - 2018)
+
+const now = 2022;
+const ageShah = now - 1983;
+const ageSyafiq = now - 1993;
+console.log(now - 1983 > now - 1993);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y) // both equal to 10 - right to left
+
+const averageAge = (ageShah + ageSyafiq) / 2; //Grouping operators calculate first
+console.log(ageShah, ageSyafiq, averageAge)
+
+
+const marksMass = 78;
+const marksTall = 1.69;
+const johnMass = 92;
+const johnTall = 1.95;
+*/
+
+// Coding Challenge #1 
+const marksMass = 95;
+const marksTall = 1.88;
+const johnMass = 85;
+const johnTall = 1.76;
+
+const marksBMI = marksMass / marksTall ** 2;
+const johnBMI = johnMass / (johnTall * johnTall);
+const markHigherBMI = marksBMI > johnBMI;
+
+
+console.log(marksBMI, johnBMI, markHigherBMI);
