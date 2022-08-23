@@ -110,21 +110,40 @@ const averageAge = (ageShah + ageSyafiq) / 2; //Grouping operators calculate fir
 console.log(ageShah, ageSyafiq, averageAge)
 
 
-const marksMass = 78;
-const marksTall = 1.69;
-const johnMass = 92;
-const johnTall = 1.95;
+// String & Template Literals
+const firstName = 'Shah';
+const job = 'IT';
+const birthYear = '1983';
+const year = '2022';
+
+const shah = `I'm ${firstName}, a ${year - birthYear} years old ${job}`;
+
+console.log(shah)
+
+console.log(`Multiple
+Enter
+Lines
+`)
+
+
+// if else statement
+const age = 19;
+
+if (age >= 18) {
+    console.log(`Shah can start driving license`)
+} else {
+    const yearLeft = 18 - age;
+    console.log(`Shah is too young. Wait another ${yearLeft} years :)`)
+}
+
+const birthYear = 1983;
+
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+
+console.log(century)
 */
-
-// Coding Challenge #1 
-const marksMass = 95;
-const marksTall = 1.88;
-const johnMass = 85;
-const johnTall = 1.76;
-
-const marksBMI = marksMass / marksTall ** 2;
-const johnBMI = johnMass / (johnTall * johnTall);
-const markHigherBMI = marksBMI > johnBMI;
-
-
-console.log(marksBMI, johnBMI, markHigherBMI);
