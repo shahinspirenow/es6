@@ -168,7 +168,7 @@ console.log('23' * '2'); // Convert String to Number
 let n = '1' + 1;
 n = n - 1;
 console.log(n)
-*/
+
 
 // Truthy and Falsy
 
@@ -192,3 +192,27 @@ if (height) {
 } else {
     console.log("Height is undefined");
 }
+*/
+// Equality Operators == vs ===
+const age = '18';
+// === Triple equal avoid coercion = false 
+//( Always use this === )
+if (age === 18) console.log('You just became and adult :D (strict)');
+// == Double equal accept coercian = true
+if (age == 18) console.log('You just became and adult :D (loose)');
+
+const favourite = Number(prompt("What's is your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+    console.log('Cool! 23 is an amazing number');
+} else if (favourite === 7) {
+    console.log('Cool! 7 is also an amazing number');
+} else if (favourite === 9) {
+    console.log('Cool! 9 is also an amazing number');
+} else {
+    console.log('Number is not 23, 7, 9');
+}
+// !== is not
+if (favourite !== 23) console.log('Why not 23?');
