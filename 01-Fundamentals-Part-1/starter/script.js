@@ -192,7 +192,7 @@ if (height) {
 } else {
     console.log("Height is undefined");
 }
-*/
+
 // Equality Operators == vs ===
 const age = '18';
 // === Triple equal avoid coercion = false 
@@ -216,3 +216,50 @@ if (favourite === 23) {
 }
 // !== is not
 if (favourite !== 23) console.log('Why not 23?');
+
+// Boolean Logical Operators
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision); // && = and (priority FALSE)
+console.log(hasDriversLicense || hasGoodVision); // && = or (priority TRUE)
+console.log(!hasDriversLicense); // && = or (priority FALSE)
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log('Shah is able to drive!');
+// } else {
+//     console.log('Someone else should drive...');
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Shah is able to drive!');
+} else {
+    console.log('Someone else should drive...');
+}
+*/
+
+const dolphins = (90 + 100 + 100) / 3;
+const koalas = (90 + 100 + 100) / 3;
+console.log(dolphins, koalas)
+
+// if (dolphins > koalas) {
+//     console.log('Dolphins is the winner');
+// } else {
+//     console.log('Koalas is the winner');
+// }
+
+if (dolphins > koalas && dolphins >= 100) {
+    console.log('Dolphins is the higher score');
+} else if (koalas > dolphins && koalas >= 100) {
+    console.log('Koalas is the higher score');
+} else if (dolphins === koalas && dolphins >= 100 && koalas >= 100) {
+    console.log('Both is winners');
+} else {
+    console.log('No team wins the trophy');
+}
