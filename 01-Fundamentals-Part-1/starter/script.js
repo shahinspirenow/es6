@@ -242,7 +242,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
     console.log('Someone else should drive...');
 }
-*/
+
 
 const dolphins = (90 + 100 + 100) / 3;
 const koalas = (90 + 100 + 100) / 3;
@@ -263,3 +263,83 @@ if (dolphins > koalas && dolphins >= 100) {
 } else {
     console.log('No team wins the trophy');
 }
+
+
+// Switch Statement
+const day = 'saturday';
+
+switch (day) {
+    case 'monday': // day === 'monday'
+        console.log('Plan My course structure');
+        console.log('Go to coding meetup');
+        break; // separate
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break; // separate
+    case 'wednesday':
+    case 'thursday':
+        console.log('write code examples');
+        break; // separate
+    case 'friday':
+        console.log('Record videos');
+        break; // separate
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend :D');
+        break; // separate
+    default:
+        console.log('Not a valid day');
+}
+
+// Compare with if else - Switch is better
+if (day === 'monday') {
+    console.log('Plan My course structure');
+    console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('write code examples');
+} else if (day === 'friday') {
+    console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy the weekend :D');
+} else {
+    console.log('Not a valid day');
+}
+
+
+3 + 4 // expressions - produce value
+!false // not false
+
+if (23 > 10) {
+    const str = '23 is bigger'; // Statement / 23 is bigger = expressions
+}
+const me = 'Jonas' // 'me'This is expression
+console.log(`I'm ${2037 - 1991} years old`) // This is expressions
+
+// Conditional Ternary Operator
+// drink is variable
+// age >= 18 is condition
+// ? is if
+// : is else
+const age = 13;
+// age >= 18 ? console.log(`I like to drink coke`) : console.log(`I don't drink`);
+
+// The best practise
+const drink = age >= 18 ? `I like to drink coke` : `I don't drink`;
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'Coke';
+} else {
+    drink2 = 'water';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? `I like to drink coke` : `I don't drink`}`)
+*/
+
+const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+console.log(`The bill was ${bill}, the tip was ${tip} and the total is ${bill + tip}`)
