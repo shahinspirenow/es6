@@ -338,8 +338,10 @@ if (age >= 18) {
 console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? `I like to drink coke` : `I don't drink`}`)
-*/
+
 
 const bill = 430;
 const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
 console.log(`The bill was ${bill}, the tip was ${tip} and the total is ${bill + tip}`)
+*/
+
